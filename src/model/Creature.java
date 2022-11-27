@@ -2,18 +2,20 @@ package model;
 
 public class Creature {
 
-    int hp;
+    int hp = 100;
     int attackPower;
-    int defense;
+    int defenseStrenth;
     Creature(){
 
     }
 
-    Creature(int hp, int attackPower, int defense){
+    Creature(int hp, int attackPower, int defenseStrenth){
         this.hp = hp;
         this.attackPower = attackPower;
-        this.defense = defense;
+        this.defenseStrenth = defenseStrenth;
     }
+
+
 
     public int getHp() {
         return hp;
@@ -31,11 +33,11 @@ public class Creature {
         this.attackPower = attackPower;
     }
 
-    public int getDefense() {
-        return defense;
+    public int getDefenseStrenth() {
+        return defenseStrenth;
     }
 
-    public void setDefense(int defense) {
-        this.defense = defense;
+    public void setDefenseStrenth(int defenseStrenth) {
+        this.defenseStrenth = defenseStrenth;
     }
 }
